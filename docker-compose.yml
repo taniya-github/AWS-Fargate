@@ -1,0 +1,10 @@
+version: '3'
+services:
+  patient-service:
+    build: ./PatientService
+    ports:
+      - "3000:3000"
+  appointment-service:
+    build: ./AppointmentService
+    ports:
+      - "4000:4000"
